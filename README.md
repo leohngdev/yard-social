@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  A privacy-first neighbourhood social app. Your posts don't scroll away —<br>
+  A privacy-first neighbourhood social app. Your posts don't scroll away<br>
   they take root on a map, and the neighbourhood grows around them.
 </p>
 
@@ -27,7 +27,7 @@ Every social app puts your life in a list that scrolls away. Yard puts it somewh
 
 Pin a post and it becomes a **plant** on a real map, on ground you've **claimed**. It grows
 through three stages as it ages. Over months your neighbourhood stops being a feed and starts
-being a garden — yours, and everyone else's, overlapping.
+being a garden, yours, and everyone else's, overlapping.
 
 Then the part that makes it a *social* map rather than a private diary: if you and someone
 else keep posting from the same places at the same times, the app notices, and your gardens
@@ -41,12 +41,12 @@ You were both there. Now something grew there.
 
 <table>
 <tr>
-<td width="30%"><img alt="Map garden" src="assets/screens/01-map-garden.png" width="250"></td>
+<td width="30%" align="center"><img alt="Map garden" src="assets/screens/01-map-garden.png" width="250"></td>
 <td valign="middle">
 
 ### 🗺️ A map that grows
 
-Pinned posts appear as plants on claimed ground. Three growth stages, tied to age — and
+Pinned posts appear as plants on claimed ground. Three growth stages, tied to age, and
 **growth changes the drawing, never the size**, so a popular post never becomes a landmark
 looming over the map it shares with everyone else.
 
@@ -60,15 +60,15 @@ looming over the map it shares with everyone else.
 Post from the same places, around the same times as someone else, and a **hybrid bloom**
 appears between your gardens.
 
-Not "you both like this café" — *you keep crossing paths*. The clock is what makes the
+Not "you both like this café" - *you keep crossing paths*. The clock is what makes the
 difference, and the bloom sits at a blurred centroid so it never gives away where either of
 you actually was.
 
 </td>
-<td width="30%"><img alt="Hybrid bloom" src="assets/screens/03-hybrid-bloom.png" width="250"></td>
+<td width="30%" align="center"><img alt="Hybrid bloom" src="assets/screens/03-hybrid-bloom.png" width="250"></td>
 </tr>
 <tr>
-<td width="30%"><img alt="Leave a drop" src="assets/screens/04-new-drop.png" width="250"></td>
+<td width="30%" align="center"><img alt="Leave a drop" src="assets/screens/04-new-drop.png" width="250"></td>
 <td valign="middle">
 
 ### 🎁 Leave something behind
@@ -87,12 +87,12 @@ Then find out whether anyone found it. Without that half, it's throwing somethin
 
 A **plot** is a patch a few people co-own, with its own group chat.
 
-A stranger doesn't see a locked plot — they see *nothing*. A visible-but-locked patch would
+A stranger doesn't see a locked plot, they see *nothing*. A visible-but-locked patch would
 announce that a group gathers at a specific place, which is the one thing a private group most
 needs hidden.
 
 </td>
-<td width="30%"><img alt="Plots" src="assets/screens/05-plots.png" width="250"></td>
+<td width="30%" align="center"><img alt="Plots" src="assets/screens/05-plots.png" width="250"></td>
 </tr>
 </table>
 
@@ -107,8 +107,8 @@ needs hidden.
 </p>
 
 <p align="center">
-  <b>Garden Wrapped</b> — a season of your garden, built to be screenshotted.<br>
-  <b>Composer</b> — capture, edit, and choose exactly who sees it.
+  <b>Garden Wrapped</b>: a season of your garden, built to be screenshotted.<br>
+  <b>Composer</b>: capture, edit, and choose exactly who sees it.
 </p>
 
 Plus the things a social app needs to be usable at all: 24-hour stories, reels, direct messages
@@ -141,9 +141,9 @@ Three things I'd want to be asked about:
 
 | | |
 | :-- | :-- |
-| **[Authorisation lives in the database →](docs/data-model.md)** | A permission check in a route can be bypassed by a bug in that route. Map privacy is enforced in Postgres row-level security instead, layered so a garden-wide switch and a per-post setting must *both* allow a pin. Coordinates are filtered server-side — the client never receives a location it isn't entitled to. |
-| **[Pollination, and tuning as a discipline →](docs/pollination.md)** | 150 m and 72 hours make a crossing. Crossings decay out of a 60-day window, capped per place so a shared commute can't fake a match. Every constant is documented with its reasoning — including the one currently set to a test value, which says so in the code. |
-| **[The architecture →](docs/architecture.md)** | Every query takes a `SupabaseClient` as its first argument and lives in one shared package, so both clients run identical logic. Privacy filtering *is* data logic — one implementation means one place to audit. |
+| **[Authorisation lives in the database →](docs/data-model.md)** | A permission check in a route can be bypassed by a bug in that route. Map privacy is enforced in Postgres row-level security instead, layered so a garden-wide switch and a per-post setting must *both* allow a pin. Coordinates are filtered server-side, the client never receives a location it isn't entitled to. |
+| **[Pollination, tuning as a discipline →](docs/pollination.md)** | 150 m and 72 hours make a crossing. Crossings decay out of a 60-day window, capped per place so a shared commute can't fake a match. Every constant is documented with its reasoning, including the one currently set to a test value, which says so in the code. |
+| **[The architecture →](docs/architecture.md)** | Every query takes a `SupabaseClient` as its first argument and lives in one shared package, so both clients run identical logic. Privacy filtering *is* data logic, one implementation means one place to audit. |
 
 **Stack:** Expo SDK 57 · React Native 0.86 · React 19 · expo-router · TanStack Query · MapLibre
 · expo-video · EAS OTA · Next.js 16 · Tailwind · Supabase (Postgres, Auth, Realtime, Storage,
@@ -153,7 +153,7 @@ pgvector, pg_cron) · OpenAI embeddings with a deterministic fallback
 
 ## Where it actually is
 
-**In TestFlight beta and submitted to App Store review — not publicly released.** No user
+**In TestFlight beta and submitted to App Store review, not publicly released.** No user
 numbers to quote.
 
 The source stays private while it's in review; this page is the tour. What's public here is
@@ -161,8 +161,9 @@ the architecture and the reasoning, which is the part worth reading anyway.
 
 Solo build: 61 commits between May and September 2026, roughly 37,000 lines across two client
 apps, one shared package, 42 migrations and four scheduled functions. The web client is
-deliberately secondary and behind mobile on features. Tests are targeted rather than broad —
-the pollination maths, the visibility rules, the media handling, which are the places a silent
+deliberately secondary and behind mobile on features.
+
+Tests are targeted rather than broad: the pollination maths, the visibility rules, the media handling, which are the places a silent
 error would be invisible.
 
 ---
