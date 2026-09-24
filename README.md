@@ -1,4 +1,4 @@
-<h1 align="center">🌱 Yard</h1>
+<h1 align="center"><img src="assets/icons/sprout.png" height="44" alt=""> Yard</h1>
 
 <p align="center">
   <b>You keep crossing paths. Yard notices.</b>
@@ -65,7 +65,7 @@ strangers only ever appear on your map as plants.
 <td width="30%" align="center"><img alt="Hybrid bloom" src="assets/screens/03-hybrid-bloom.png" width="250"></td>
 <td valign="middle">
 
-### 🌸 A bloom is a door
+### <img src="assets/icons/bloom.png" height="26" alt=""> A bloom is a door
 
 Keep crossing paths with someone and a **hybrid bloom** grows between your gardens, visible to
 the two of you alone.
@@ -79,7 +79,7 @@ paths. Only the second grows a bloom.
 <tr>
 <td valign="middle">
 
-### 🗺️ A map that grows
+### <img src="assets/icons/oak.png" height="26" alt=""> A map that grows
 
 Pinned posts appear as plants where you stood, on claimed ground. Three growth stages, tied to
 age, and **growth changes the drawing, never the size**, so a popular post never becomes a
@@ -94,7 +94,7 @@ Strangers' plants show within 2 km of you and no further.
 <td width="30%" align="center"><img alt="Leave a drop" src="assets/screens/04-new-drop.png" width="250"></td>
 <td valign="middle">
 
-### 🎁 Leave something behind
+### <img src="assets/icons/drop.png" height="26" alt=""> Leave something behind
 
 A note, an item, a time capsule, left at a place for someone to find. Pick what it is, who
 it's for, and when it opens. It only opens for whoever walks there.
@@ -106,7 +106,7 @@ Then find out whether anyone found it. Without that half, it's throwing somethin
 <tr>
 <td valign="middle">
 
-### 🏡 Ground you share
+### <img src="assets/icons/plot.png" height="26" alt=""> Ground you share
 
 A **plot** is a patch a few people co-own, with its own group chat.
 
@@ -121,7 +121,7 @@ needs hidden.
 <td width="30%" align="center"><img alt="A decorated patch" src="assets/screens/07-decorated-patch.png" width="250"></td>
 <td valign="middle">
 
-### 🪑 A patch of your own
+### <img src="assets/icons/bench.png" height="26" alt=""> A patch of your own
 
 Put down a patch and "My garden" zooms right into it. Two tabs of things to place, Yard and
 Garden: a bench, a pond, a hammock, a gate. Only people you've accepted as followers can see it.
@@ -159,11 +159,11 @@ its own privacy rules.
 
 ```mermaid
 flowchart TD
-    M["📱 Mobile, primary<br>Expo SDK 57 · React Native 0.86<br>expo-router · MapLibre"]
-    W["🌐 Web, secondary<br>Next.js 16 · React 19 · Vercel"]
-    S["📦 @yard/shared<br>domain logic · privacy filtering"]
-    DB[("🐘 Supabase Postgres<br>row-level security · security definer functions · pg_cron")]
-    F["⚙️ Edge Functions<br>nightly pollination · stories · push"]
+    M["Mobile, primary<br>Expo SDK 57 · React Native 0.86<br>expo-router · MapLibre"]
+    W["Web, secondary<br>Next.js 16 · React 19 · Vercel"]
+    S["@yard/shared<br>domain logic · privacy filtering"]
+    DB[("Supabase Postgres<br>row-level security · security definer functions · pg_cron")]
+    F["Edge Functions<br>nightly pollination · stories · push"]
 
     M --> S
     W --> S
