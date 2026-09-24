@@ -1,12 +1,13 @@
 <h1 align="center">🌱 Yard</h1>
 
 <p align="center">
-  <b>Post where you are. Watch it grow.</b>
+  <b>You keep crossing paths. Yard notices.</b>
 </p>
 
 <p align="center">
-  A privacy-first neighbourhood social app. Your posts don't scroll away<br>
-  they take root on a map, and the neighbourhood grows around them.
+  Your posts take root on a map as plants. When you and someone keep turning up in the same<br>
+  places, a bloom grows between your gardens, and neither of you learns who the other is<br>
+  until you both want to know.
 </p>
 
 <p align="center">
@@ -16,24 +17,44 @@
 </p>
 
 <p align="center">
-  <img alt="The map garden" src="assets/screens/01-map-garden.png" width="330">
+  <img alt="Yard: a bloom before either of you knows who, between a map garden and a decorated patch" src="assets/cover.png" width="100%">
 </p>
 
 ---
 
 ## The idea
 
-Every social app puts your life in a list that scrolls away. Yard puts it somewhere.
+You keep crossing paths with someone. The same café, the same park, the same corner, week
+after week, and neither of you knows it.
 
-Pin a post and it becomes a **plant** on a real map, on ground you've **claimed**. It grows
-through three stages as it ages. Over months your neighbourhood stops being a feed and starts
-being a garden, yours, and everyone else's, overlapping.
+Yard notices. A **bloom** grows between your two gardens, on a map only the two of you can
+see. It carries no name and no face. Each of you can tap **I want to know**, and neither of you
+can see whether the other has. Once you both have, the names appear and you're in a
+conversation. What happens after that is up to you.
 
-Then the part that makes it a *social* map rather than a private diary: if you and someone
-else keep posting from the same places at the same times, the app notices, and your gardens
-**cross-pollinate** into a shared bloom neither of you planted.
+The garden is how it notices. Pin a post and it becomes a **plant** on the map, where you
+stood, on ground you've claimed. It grows through three stages as it ages. Every night Yard
+compares where people's plants landed and when, and a bloom only grows between two people who
+keep overlapping.
 
-You were both there. Now something grew there.
+---
+
+## How a bloom happens
+
+1. **You opt in.** Crossing paths is off until you say yes. Yard asks once, during onboarding,
+   and the switch lives in Settings after that.
+2. **You plant.** Only posts you pin for others count. A private post never makes a crossing,
+   and Yard never reads your live location to find one.
+3. **Yard notices, slowly.** Once a night, two plants within 150 m and 72 hours of each other
+   count as a crossing. A bloom takes repeated crossings inside 60 days, and one place can
+   only count for so much, so a shared commute can't fake one.
+4. **A bloom grows.** It sits at a blurred centroid of where you crossed, never at either
+   person's spot. A trail of leaves points toward the other garden and stops at a fixed
+   distance, so it gives a direction, not an address.
+5. **The door.** No name, no face, no profile until you both tap. Then you're in a DM.
+
+Nobody gets more than three new blooms a week. There's no list of people near you, and
+strangers only ever appear on your map as plants.
 
 ---
 
@@ -41,31 +62,33 @@ You were both there. Now something grew there.
 
 <table>
 <tr>
-<td width="30%" align="center"><img alt="Map garden" src="assets/screens/01-map-garden.png" width="250"></td>
+<td width="30%" align="center"><img alt="Hybrid bloom" src="assets/screens/03-hybrid-bloom.png" width="250"></td>
 <td valign="middle">
 
-### 🗺️ A map that grows
+### 🌸 A bloom is a door
 
-Pinned posts appear as plants on claimed ground. Three growth stages, tied to age, and
-**growth changes the drawing, never the size**, so a popular post never becomes a landmark
-looming over the map it shares with everyone else.
+Keep crossing paths with someone and a **hybrid bloom** grows between your gardens, visible to
+the two of you alone.
+
+The clock is what makes it mean something. Two people posting from one café a month apart
+share a taste. Two people posting from it within three days, again and again, keep crossing
+paths. Only the second grows a bloom.
 
 </td>
 </tr>
 <tr>
 <td valign="middle">
 
-### 🌸 Blooms you didn't plant
+### 🗺️ A map that grows
 
-Post from the same places, around the same times as someone else, and a **hybrid bloom**
-appears between your gardens.
+Pinned posts appear as plants where you stood, on claimed ground. Three growth stages, tied to
+age, and **growth changes the drawing, never the size**, so a popular post never becomes a
+landmark looming over everyone else's.
 
-Not "you both like this café" - *you keep crossing paths*. The clock is what makes the
-difference, and the bloom sits at a blurred centroid so it never gives away where either of
-you actually was.
+Strangers' plants show within 2 km of you and no further.
 
 </td>
-<td width="30%" align="center"><img alt="Hybrid bloom" src="assets/screens/03-hybrid-bloom.png" width="250"></td>
+<td width="30%" align="center"><img alt="Map garden" src="assets/screens/01-map-garden.png" width="250"></td>
 </tr>
 <tr>
 <td width="30%" align="center"><img alt="Leave a drop" src="assets/screens/04-new-drop.png" width="250"></td>
@@ -73,8 +96,8 @@ you actually was.
 
 ### 🎁 Leave something behind
 
-A note, an item, a time capsule — left at a place for someone to find. Pick what it is, who
-it's for, and when it opens.
+A note, an item, a time capsule, left at a place for someone to find. Pick what it is, who
+it's for, and when it opens. It only opens for whoever walks there.
 
 Then find out whether anyone found it. Without that half, it's throwing something into a well.
 
@@ -94,6 +117,17 @@ needs hidden.
 </td>
 <td width="30%" align="center"><img alt="Plots" src="assets/screens/05-plots.png" width="250"></td>
 </tr>
+<tr>
+<td width="30%" align="center"><img alt="A decorated patch" src="assets/screens/07-decorated-patch.png" width="250"></td>
+<td valign="middle">
+
+### 🪑 A patch of your own
+
+Put down a patch and "My garden" zooms right into it. Two tabs of things to place, Yard and
+Garden: a bench, a pond, a hammock, a gate. Only people you've accepted as followers can see it.
+
+</td>
+</tr>
 </table>
 
 ---
@@ -111,9 +145,10 @@ needs hidden.
   <b>Composer</b>: capture, edit, and choose exactly who sees it.
 </p>
 
-Plus the things a social app needs to be usable at all: 24-hour stories, reels, direct messages
-and group chats, comments, follows and follow requests, close friends, private profiles,
-blocking, moderation, drafts, search and push notifications.
+Around the garden sit the things a social app needs to be usable at all: posts of up to 22
+photos and clips, a live camera, 24-hour stories, reels, direct messages and group chats,
+comments, follows and follow requests, close friends, private profiles, blocking, moderation,
+drafts, search, push notifications, and a patch of your own to decorate.
 
 ---
 
@@ -124,10 +159,10 @@ its own privacy rules.
 
 ```mermaid
 flowchart TD
-    M["📱 Mobile — primary<br>Expo SDK 57 · React Native 0.86<br>expo-router · MapLibre"]
-    W["🌐 Web — secondary<br>Next.js 16 · React 19 · Vercel"]
+    M["📱 Mobile, primary<br>Expo SDK 57 · React Native 0.86<br>expo-router · MapLibre"]
+    W["🌐 Web, secondary<br>Next.js 16 · React 19 · Vercel"]
     S["📦 @yard/shared<br>domain logic · privacy filtering"]
-    DB[("🐘 Supabase Postgres<br>row-level security · pgvector · pg_cron")]
+    DB[("🐘 Supabase Postgres<br>row-level security · security definer functions · pg_cron")]
     F["⚙️ Edge Functions<br>nightly pollination · stories · push"]
 
     M --> S
@@ -141,13 +176,13 @@ Three things I'd want to be asked about:
 
 | | |
 | :-- | :-- |
-| **[Authorisation lives in the database →](docs/data-model.md)** | A permission check in a route can be bypassed by a bug in that route. Map privacy is enforced in Postgres row-level security instead, layered so a garden-wide switch and a per-post setting must *both* allow a pin. Coordinates are filtered server-side, the client never receives a location it isn't entitled to. |
-| **[Pollination, tuning as a discipline →](docs/pollination.md)** | 150 m and 72 hours make a crossing. Crossings decay out of a 60-day window, capped per place so a shared commute can't fake a match. Every constant is documented with its reasoning, including the one currently set to a test value, which says so in the code. |
-| **[The architecture →](docs/architecture.md)** | Every query takes a `SupabaseClient` as its first argument and lives in one shared package, so both clients run identical logic. Privacy filtering *is* data logic, one implementation means one place to audit. |
+| **[Authorisation lives in the database →](docs/data-model.md)** | A permission check in a route can be bypassed by a bug in that route, so Yard's privacy rules live in Postgres. A post's audience, and the rule that strangers only see plants within 2 km, are applied inside a `SECURITY DEFINER` function, so a client never receives a coordinate it isn't entitled to. The bloom door works the same way. Clients can't read the bloom table at all, because a row names both people, and a function hands back the other person only once both have said yes. |
+| **[Pollination, tuning as a discipline →](docs/pollination.md)** | 150 m and 72 hours make a crossing. Crossings fall out of a 60-day window and are capped per place, so a shared commute can't fake a streak on its own, and nobody gets more than three new blooms a week. Every constant is documented with its reasoning, including the one currently set to a test value, which says so in the code. |
+| **[The architecture →](docs/architecture.md)** | Every query takes a `SupabaseClient` as its first argument and lives in one shared package, so both clients run identical logic. Privacy filtering *is* data logic, and one implementation means one place to audit. |
 
 **Stack:** Expo SDK 57 · React Native 0.86 · React 19 · expo-router · TanStack Query · MapLibre
-· expo-video · EAS OTA · Next.js 16 · Tailwind · Supabase (Postgres, Auth, Realtime, Storage,
-pgvector, pg_cron) · OpenAI embeddings with a deterministic fallback
+· expo-camera · expo-video · EAS OTA · Next.js 16 · Tailwind · Supabase (Postgres, Auth,
+Realtime, Storage, Edge Functions, pg_cron)
 
 ---
 
@@ -156,15 +191,20 @@ pgvector, pg_cron) · OpenAI embeddings with a deterministic fallback
 **In TestFlight beta and submitted to App Store review, not publicly released.** No user
 numbers to quote.
 
+It launches in my own neighbourhood first. A bloom needs two people crossing paths, and that
+takes enough people in one place, so the first launch is one place.
+
 The source stays private while it's in review; this page is the tour. What's public here is
 the architecture and the reasoning, which is the part worth reading anyway.
 
-Solo build: 61 commits between May and September 2026, roughly 37,000 lines across two client
-apps, one shared package, 42 migrations and four scheduled functions. The web client is
-deliberately secondary and behind mobile on features.
+Solo build: 72 commits between May and September 2026, roughly 46,000 lines across two client
+apps, one shared package, 50 migrations and four edge functions. The web client is deliberately
+secondary and behind mobile on features.
 
-Tests are targeted rather than broad: the pollination maths, the visibility rules, the media handling, which are the places a silent
-error would be invisible.
+Tests are targeted rather than broad: 110 of them, on the places a silent error would be
+invisible. The pollination maths, the visibility rules, the media handling, the table grants,
+and the SQL behind the bloom door, which a test reads to make sure the other person stays
+hidden until both say yes.
 
 ---
 

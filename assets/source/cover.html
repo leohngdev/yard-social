@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- The README cover (../cover.png, 2x) and the social preview (../social-preview.png, 1x).
+     Re-render after replacing a screenshot, from this folder:
+       msedge --headless=new --hide-scrollbars --allow-file-access-from-files --force-device-scale-factor=2 --window-size=1280,640 --screenshot=../cover.png cover.html
+     The icon and the Nunito font are read from the app repo at D:/GitHub/Yard. -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 800;
+    src: url("file:///D:/GitHub/Yard/node_modules/@expo-google-fonts/nunito/800ExtraBold/Nunito_800ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-weight: 600;
+    src: url("file:///D:/GitHub/Yard/node_modules/@expo-google-fonts/nunito/600SemiBold/Nunito_600SemiBold.ttf");
+  }
+  :root {
+    --bg: #17120E;
+    --ink: #F7F1E6;
+    --ink2: #DCCFBB;
+    --muted: #A3907B;
+    --accent: #F0B948;
+    --accent2: #D9714B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    position: relative;
+    background:
+      radial-gradient(ellipse 620px 520px at 78% 52%, rgba(240, 185, 72, 0.16), transparent 70%),
+      radial-gradient(ellipse 700px 600px at 10% 110%, rgba(217, 113, 75, 0.14), transparent 70%),
+      linear-gradient(160deg, #1D1610 0%, #130E0A 100%);
+    font-family: "Nunito", system-ui, sans-serif;
+    color: var(--ink);
+  }
+
+  .copy { position: absolute; left: 76px; top: 0; bottom: 0; width: 570px;
+          display: flex; flex-direction: column; justify-content: center; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
+  .brand img { width: 64px; height: 64px; border-radius: 16px;
+               box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45); }
+  .brand span { font-weight: 800; font-size: 36px; letter-spacing: 0.5px; }
+  h1 { font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.5px; }
+  h1 em { font-style: normal; color: var(--accent); }
+  p { font-weight: 600; font-size: 22px; line-height: 1.45; color: var(--ink2);
+      margin-top: 26px; max-width: 470px; }
+  .foot { margin-top: 34px; display: flex; align-items: center; gap: 12px;
+          font-weight: 600; font-size: 16px; color: var(--muted); letter-spacing: 0.4px; }
+  .dot { width: 8px; height: 8px; border-radius: 4px; background: var(--accent2); }
+
+  .phone { position: absolute; border-radius: 34px; overflow: hidden;
+           border: 7px solid #0A0705;
+           box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(247, 241, 230, 0.08); }
+  .phone img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .p-left  { left: 640px;  top: 118px; width: 196px; height: 436px; transform: rotate(-7deg); opacity: 0.92; }
+  .p-right { left: 1012px; top: 118px; width: 196px; height: 436px; transform: rotate(7deg);  opacity: 0.92; }
+  .p-mid   { left: 786px;  top: 42px;  width: 252px; height: 560px; z-index: 2; }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <div class="brand">
+      <img src="file:///D:/GitHub/Yard/apps/mobile/assets/images/icon.png" alt="">
+      <span>Yard</span>
+    </div>
+    <h1>You keep crossing paths.<br><em>Yard notices.</em></h1>
+    <p>A bloom grows between your gardens. Neither of you learns who the other is until you both want to know.</p>
+    <div class="foot"><span class="dot"></span>iOS · Android · Web</div>
+  </div>
+
+  <div class="phone p-left"><img src="../screens/01-map-garden.png" alt=""></div>
+  <div class="phone p-right"><img src="../screens/07-decorated-patch.png" alt=""></div>
+  <div class="phone p-mid"><img src="../screens/03-hybrid-bloom.png" alt=""></div>
+</body>
+</html>
